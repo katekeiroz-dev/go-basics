@@ -1,18 +1,7 @@
-package main
-
-import "fmt"
-
-func main() {
-
-	fmt.Println("---List of my to-do ---")
-	var meeting = "meeting on Tuesday"
-	var appoint = "doctor on Friday"
-	var party = "Leah's birthday on Saturday"
-
 	var taskItems = []string{meeting, appoint, party} //chama-se slice, pois nao eh limitado os values dentro. se por acaso eu limito ex [2] seria uma array
 	printTasks(taskItems)
 
-}
+
 
 func printTasks(taskItems []string) //passando parametros e especificando o tipo {
 	for index, tasks := range taskItems {
